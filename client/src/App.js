@@ -54,7 +54,7 @@ export default function App() {
 					type="number"
 					placeholder="age"
 					value={age}
-					onChange={(e) => setAge(e.target.value)}
+					onChange={(e) => setAge(Number(e.target.value))}
 				/>
 				<div className="btns">
 					<button onClick={(e) => addUser(e)}>Создать</button>
